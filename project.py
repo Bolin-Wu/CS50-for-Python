@@ -8,7 +8,7 @@ import sys
 
 def get_weather_data(city: str) -> dict:
     """Fetch weather data from OpenWeatherMap API for a given city."""
-    api_key = "6220a466f9b34d66cd12c9f924146997"
+    api_key = "YOURAPI"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
     if response.status_code == 200: 
